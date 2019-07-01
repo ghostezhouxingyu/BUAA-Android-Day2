@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/exercise3_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#161823">
+
+        <TextView
+            android:id="@+id/exercise3_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="消息" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_below="@id/exercise3_header"
+        android:orientation="horizontal"
+        android:background="#161823"
+        android:id="@+id/nav"
+        android:weightSum="4">
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_notice_fans"
+                android:onClick="openLink"
+                android:id="@+id/fans"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/fans"
+                android:fontFamily="monospace"
+                android:paddingTop="5dp"
+                android:textColor="#ffffff"
+                android:text="粉丝"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_notice_like"
+                android:onClick="openLink"
+                android:id="@+id/like"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/like"
+                android:fontFamily="monospace"
+                android:paddingTop="5dp"
+                android:textColor="#ffffff"
+                android:text="赞"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:src="@drawable/icon_notice_people"
+                android:onClick="openLink"
+                android:id="@+id/people"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/people"
+                android:fontFamily="monospace"
+                android:paddingTop="5dp"
+                android:textColor="#ffffff"
+                android:text="\@我的"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_notice_comment"
+            android:onClick="openLink"
+            android:id="@+id/comment"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/comment"
+            android:fontFamily="monospace"
+            android:paddingTop="5dp"
+            android:textColor="#ffffff"
+            android:text="评论"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav"
+        android:layout_above="@id/exercise3_bottom"
+        android:background="#161823"
+        android:id="@+id/messages"
+        ></ListView>
+
+    <RelativeLayout
+        android:id="@+id/exercise3_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_2_x"/>
+    </RelativeLayout>
+</RelativeLayout>

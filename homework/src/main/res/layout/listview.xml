@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:background="#161823">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/head_image"
+        android:src="@drawable/timg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_image"
+        android:paddingLeft="5dp"
+        android:paddingTop="7dp"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:id="@+id/head_name"
+        android:textColor="#ffffff"
+        android:text="抖音小助手" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_image"
+        android:layout_below="@+id/head_name"
+        android:fontFamily="monospace"
+        android:paddingLeft="5dp"
+        android:paddingTop="4dp"
+        android:textSize="14sp"
+        android:textColor="#80ffffff"
+        android:text="欢迎注册抖音，走不通的路就用拳头来打开"
+        />
+</RelativeLayout>
